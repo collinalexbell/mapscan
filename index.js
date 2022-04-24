@@ -11,7 +11,7 @@ function initMap() {
 
 function moveNorth() {
     center.lat = center.lat + 0.01
-    map.setCenter(center.lat, center.lng)
+    map.setCenter(new google.maps.LatLng(center.lat, center.lng));
 }
 setInterval(moveNorth, 500);
 
