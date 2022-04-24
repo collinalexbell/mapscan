@@ -1,11 +1,18 @@
 let map;
+const center = { lat: 40.7127, lng: -74.0134 };
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
       //40.7127° N, 74.0134° W
-    center: { lat: 40.7127, lng: -74.0134 },
+    center,
     zoom: 8,
   });
 }
+
+function moveNorth() {
+    center.lat = center.lat + 0.01
+    map.setCenter(center.lat, center.lng)
+}
+setInterval(moveNorth, 500);
 
 window.initMap = initMap;
