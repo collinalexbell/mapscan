@@ -10,7 +10,8 @@ function initMap() {
 }
 
 function moveNorth() {
-    center.lat = center.lat + 0.01
+    center.lat = center.lat + 0.001
+    center.lng = center.lng + 0.0005
     map.setCenter(new google.maps.LatLng(center.lat, center.lng));
 }
 setInterval(moveNorth, 500);
