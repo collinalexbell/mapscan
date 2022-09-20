@@ -1,0 +1,22 @@
+{
+  "name": "mapscan",
+  "version": "1.0.0",
+  "description": "mapscan is a library for scraping google maps data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuberlog/mapscan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuberlog/mapscan/issues"
+  },
+  "homepage": "https://github.com/kuberlog/mapscan#readme",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
