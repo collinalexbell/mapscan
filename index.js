@@ -5,7 +5,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
       //40.7127° N, 74.0134° W
     center,
-    zoom: 8,
+    zoom: 16,
   });
 }
 
